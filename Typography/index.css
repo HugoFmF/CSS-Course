@@ -1,0 +1,21 @@
+body {
+  padding: 10%;
+  font-size: 2rem;
+  font-family: monospace;
+}
+
+input, button {
+  font: inherit;
+}
+
+p {
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: justify;
+  text-indent: 3rem;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  word-spacing: 0.25em;
+  font-weight: bold;
+  font-style: italic;
+}

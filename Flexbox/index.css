@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid #000;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; this wraps inside the box */
+  flex-flow: row wrap;
+  align-content: center; /* this item aligns the rows, it's different from align-items  */
+}
+
+.box {
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; /* this aligns items inside the box */
+}
+
+.container1 {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid #000;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; this wraps inside the box */
+  flex-flow: row nowrap;
+  align-content: center; /* this item aligns the rows, it's different from align-items  */
+}
+
+.box1 {
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; /* this aligns items inside the box */
+
+  /* flex-grow: 1; it grows to take the entire line */
+  flex-shrink: 1;
+  flex-basis: 250px; /* it sets the min-width */
+
+  /* flex: 1 1 40%; grow, shrink, basis*/
+}
+
+.box1:nth-child(2) {
+  /* flex-grow: 2; */
+  flex-shrink: 2;
+  /* order: -1; this sets the order of an element. */
+}
